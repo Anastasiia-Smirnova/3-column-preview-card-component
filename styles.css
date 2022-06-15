@@ -1,0 +1,93 @@
+body {
+   background-color: #F2F2F2;
+}
+
+.cards {
+    max-width: 960px;
+    min-width: 300px;
+    height: 100%;
+    margin: 85px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sedans {
+    background-color: #E28525;
+    padding: 45px;
+}
+
+.suvs {
+    background-color: #016972;
+    padding: 45px;
+}
+
+.luxury {
+    background-color: #00403F;
+    padding: 45px;
+}
+
+h2 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 26px;
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.8;
+    color: #f2f2f2;
+    width: 85%;
+}
+
+button {
+    width: 140px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 25px;
+    transition: all .4s ease-in-out;
+}
+
+#button-sedans {
+    color: #E28525;
+}
+
+#button-suvs {
+    color: #016972;
+}
+
+#button-luxury {
+    color: #00403F;
+}
+
+#button-sedans:hover {
+    color: #F2F2F2;
+    border: 1px solid #f2f2f2;
+    background-color: transparent;
+}
+
+#button-suvs:hover {
+    color: #F2F2F2;
+    border: 1px solid #f2f2f2;
+    background-color: transparent;
+}
+
+#button-luxury:hover {
+    color: #F2F2F2;
+    border: 1px solid #f2f2f2;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 620px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
